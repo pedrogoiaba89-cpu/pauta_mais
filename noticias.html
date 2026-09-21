@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pauta+ Notícias — notícias políticas com fonte e data verificáveis.">
+  <title>Notícias | Pauta+</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    .news-page{padding:70px 0 90px}
+    .news-header{margin-bottom:34px}
+    .news-header h1{font-size:clamp(40px,7vw,62px);line-height:1.05;margin:8px 0 14px;color:#071a33}
+    .news-header p{max-width:720px;color:#667085;font-size:17px}
+    .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+    .news-card{background:#fff;border:1px solid #e4e7ec;border-radius:18px;padding:26px;display:flex;flex-direction:column;min-height:300px;box-shadow:0 8px 25px rgba(16,24,40,.05)}
+    .news-card .category{color:#1463ff;font-size:12px;font-weight:800;letter-spacing:1.3px}
+    .news-card h2{font-size:23px;line-height:1.25;margin:12px 0}
+    .news-card p{color:#667085;flex:1}
+    .news-meta{font-size:13px;color:#98a2b3;margin:18px 0}
+    .source-link{display:inline-block;color:#1463ff;font-weight:800}
+    .source-link:hover{text-decoration:underline}
+    .back{display:inline-block;margin-bottom:25px;color:#1463ff;font-weight:800}
+    .notice{margin-top:30px;padding:18px 20px;border-radius:12px;background:#eaf0fa;color:#344054;font-size:14px}
+    @media(max-width:700px){.news-grid{grid-template-columns:1fr}.news-page{padding:45px 0 70px}}
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span>Pauta+</span></a>
+    <button class="menu-btn" aria-label="Abrir menu">☰</button>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="index.html#politica">Política</a>
+      <a href="index.html#dados">Dados</a>
+      <a href="index.html#comparar">Comparar</a>
+      <a href="index.html#entenda">Entenda</a>
+    </nav>
+  </div>
+</header>
+
+<main class="news-page">
+  <div class="container">
+    <a class="back" href="index.html">← Voltar para o início</a>
+
+    <div class="news-header">
+      <span class="eyebrow">PAUTA+ NOTÍCIAS</span>
+      <h1>Últimas notícias</h1>
+      <p>Seleção inicial de notícias políticas com data e fonte identificadas. O Pauta+ apresenta os fatos de forma informativa e não atribui classificação ou preferência a candidatos, partidos ou propostas.</p>
+    </div>
+
+    <section class="news-grid">
+
+      <article class="news-card">
+        <span class="category">ELEIÇÕES 2026</span>
+        <h2>Faltam 21 dias: TSE explica os cargos em disputa nas Eleições 2026</h2>
+        <p>O Tribunal Superior Eleitoral publicou um guia explicando as funções dos cargos que estarão em disputa nas eleições de 4 de outubro.</p>
+        <div class="news-meta">13/09/2026 • TSE</div>
+        <a class="source-link" href="https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/faltam-21-dias-conheca-os-cargos-em-disputa-nas-eleicoes-2026" target="_blank" rel="noopener">Ler fonte original →</a>
+      </article>
+
+      <article class="news-card">
+        <span class="category">LEGISLAÇÃO</span>
+        <h2>Nova lei cria Política Nacional de Minerais Críticos e Estratégicos</h2>
+        <p>A Lei 15.506/2026 foi sancionada em 16 de setembro e estabelece uma política para a cadeia produtiva de minerais considerados críticos e estratégicos.</p>
+        <div class="news-meta">16/09/2026 • Agência Câmara</div>
+        <a class="source-link" href="https://www.camara.leg.br/noticias/1305164-nova-lei-cria-a-politica-nacional-de-minerais-criticos-e-estrategicos" target="_blank" rel="noopener">Ler fonte original →</a>
+      </article>
+
+      <article class="news-card">
+        <span class="category">ELEIÇÕES 2026</span>
+        <h2>Lei estabelece período em que candidatos e eleitores não podem ser presos</h2>
+        <p>Segundo o Senado, a regra começa em 19 de setembro e prevê exceção para casos de flagrante delito durante o período indicado pela legislação eleitoral.</p>
+        <div class="news-meta">18/09/2026 • Senado Notícias</div>
+        <a class="source-link" href="https://www12.senado.leg.br/noticias/materias/2026/09/18/lei-proibe-prisao-de-candidatos-e-eleitores-durante-periodo-eleitoral" target="_blank" rel="noopener">Ler fonte original →</a>
+      </article>
+
+      <article class="news-card">
+        <span class="category">JUSTIÇA ELEITORAL</span>
+        <h2>Justiça Eleitoral rejeita cerca de 1,2 mil registros de candidatura</h2>
+        <p>Dados divulgados pelo TSE indicavam cerca de 99% dos pedidos de registro analisados até 17 de setembro, com parte dos indeferimentos ainda sujeita a recursos.</p>
+        <div class="news-meta">17/09/2026 • Agência Brasil</div>
+        <a class="source-link" href="https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/justica-eleitoral-rejeita-cerca-de-12-mil-registros-de-candidatura" target="_blank" rel="noopener">Ler fonte original →</a>
+      </article>
+
+    </section>
+
+    <div class="notice">
+      <strong>Como o Pauta+ trabalha:</strong> cada notícia deve indicar fonte e data. Em temas eleitorais, informações podem mudar rapidamente; por isso, consulte a fonte original para atualizações.
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <div>
+      <strong>Pauta+</strong>
+      <p>Informação política de forma clara e acessível.</p>
+    </div>
+    <div>
+      <p>© 2026 Pauta+</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.querySelector(".menu-btn");
+const nav = document.querySelector("nav");
+if (menuBtn && nav) {
+  menuBtn.addEventListener("click", () => nav.classList.toggle("active"));
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => nav.classList.remove("active"));
+  });
+}
+</script>
+
+</body>
+</html>
