@@ -3,118 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pauta+ Notícias — notícias políticas com fonte e data verificáveis.">
+  <meta name="description" content="Pauta+ Notícias">
   <title>Notícias | Pauta+</title>
   <link rel="stylesheet" href="estilo.css">
   <style>
-    .news-page{padding:70px 0 90px}
-    .news-header{margin-bottom:34px}
-    .news-header h1{font-size:clamp(40px,7vw,62px);line-height:1.05;margin:8px 0 14px;color:#071a33}
-    .news-header p{max-width:720px;color:#667085;font-size:17px}
-    .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .news-card{background:#fff;border:1px solid #e4e7ec;border-radius:18px;padding:26px;display:flex;flex-direction:column;min-height:300px;box-shadow:0 8px 25px rgba(16,24,40,.05)}
-    .news-card .category{color:#1463ff;font-size:12px;font-weight:800;letter-spacing:1.3px}
-    .news-card h2{font-size:23px;line-height:1.25;margin:12px 0}
-    .news-card p{color:#667085;flex:1}
-    .news-meta{font-size:13px;color:#98a2b3;margin:18px 0}
-    .source-link{display:inline-block;color:#1463ff;font-weight:800}
-    .source-link:hover{text-decoration:underline}
-    .back{display:inline-block;margin-bottom:25px;color:#1463ff;font-weight:800}
-    .notice{margin-top:30px;padding:18px 20px;border-radius:12px;background:#eaf0fa;color:#344054;font-size:14px}
-    @media(max-width:700px){.news-grid{grid-template-columns:1fr}.news-page{padding:45px 0 70px}}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    .top-bar {
+      background-color: #1a202c;
+      padding: 15px 0;
+    }
+
+    .container-nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .brand {
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    navigation a {
+      color: #cbd5e0;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    navigation a:hover {
+      color: #fff;
+    }
+
+    .pagina-noticias {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .cabecalho-noticias {
+      margin-bottom: 34px;
+    }
+
+    .cabecalho-noticias h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .cabecalho-noticias p {
+      max-width: 720px;
+      color: #667085;
+    }
+
+    .grade-noticias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .cartao-noticias {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .categoria {
+      color: #1463ff;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .cartao-noticias h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .cartao-noticias p {
+      color: #667085;
+      flex: 1;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .noticias-meta {
+      font-size: 13px;
+      color: #98a2b3;
+      border-top: 1px solid #f0f0f0;
+      padding-top: 10px;
+    }
+
+    .link-origem {
+      display: inline-block;
+      color: #1463ff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .link-origem:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .grade-noticias {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="container nav">
-    <a class="brand" href="index.html"><span>Pauta+</span></a>
-    <button class="menu-btn" aria-label="Abrir menu">☰</button>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="noticias.html">Notícias</a>
-      <a href="index.html#politica">Política</a>
-      <a href="index.html#dados">Dados</a>
-      <a href="index.html#comparar">Comparar</a>
-      <a href="index.html#entenda">Entenda</a>
-    </nav>
-  </div>
-</header>
+  <header class="top-bar">
+    <div class="container-nav">
+      <a class="brand" href="index.html">Pauta+</a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="#politica">Política</a>
+        <a href="#dados">Dados</a>
+        <a href="#comparar">Comparador</a>
+        <a href="#entenda">Entenda</a>
+      </nav>
+    </div>
+  </header>
 
-<main class="news-page">
-  <div class="container">
-    <a class="back" href="index.html">← Voltar para o início</a>
-
-    <div class="news-header">
-      <span class="eyebrow">PAUTA+ NOTÍCIAS</span>
-      <h1>Últimas notícias</h1>
-      <p>Seleção inicial de notícias políticas com data e fonte identificadas. O Pauta+ apresenta os fatos de forma informativa e não atribui classificação ou preferência a candidatos, partidos ou propostas.</p>
+  <main class="pagina-noticias">
+    <div class="cabecalho-noticias">
+      <h1>Últimas Notícias</h1>
+      <p>Acompanhe as principais atualizações e reportagens das fontes oficiais.</p>
     </div>
 
-    <section class="news-grid">
-
-      <article class="news-card">
-        <span class="category">ELEIÇÕES 2026</span>
-        <h2>Faltam 21 dias: TSE explica os cargos em disputa nas Eleições 2026</h2>
-        <p>O Tribunal Superior Eleitoral publicou um guia explicando as funções dos cargos que estarão em disputa nas eleições de 4 de outubro.</p>
-        <div class="news-meta">13/09/2026 • TSE</div>
-        <a class="source-link" href="https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/faltam-21-dias-conheca-os-cargos-em-disputa-nas-eleicoes-2026" target="_blank" rel="noopener">Ler fonte original →</a>
+    <section class="grade-noticias">
+      
+      <!-- Notícia 1 -->
+      <article class="cartao-noticias">
+        <span class="categoria">Tecnologia & Ciência</span>
+        <h2>Avanços da Inteligência Artificial e Novas Regulamentações</h2>
+        <p>Acompanhe como governos e empresas mundiais estão definindo regras e novos padrões para o uso ético da IA na sociedade.</p>
+        <div class="noticias-meta">
+          <span>Fonte: BBC News Brasil</span><br>
+          <a class="link-origem" href="https://www.bbc.com/portuguese" target="_blank">Ler matéria original &rarr;</a>
+        </div>
       </article>
 
-      <article class="news-card">
-        <span class="category">LEGISLAÇÃO</span>
-        <h2>Nova lei cria Política Nacional de Minerais Críticos e Estratégicos</h2>
-        <p>A Lei 15.506/2026 foi sancionada em 16 de setembro e estabelece uma política para a cadeia produtiva de minerais considerados críticos e estratégicos.</p>
-        <div class="news-meta">16/09/2026 • Agência Câmara</div>
-        <a class="source-link" href="https://www.camara.leg.br/noticias/1305164-nova-lei-cria-a-politica-nacional-de-minerais-criticos-e-estrategicos" target="_blank" rel="noopener">Ler fonte original →</a>
+      <!-- Notícia 2 -->
+      <article class="cartao-noticias">
+        <span class="categoria">Economia</span>
+        <h2>Indicadores Econômicos e Ações do Mercado Financeiro</h2>
+        <p>Confira as análises sobre a inflação, taxas de juros e as projeções do mercado para os próximos trimestres.</p>
+        <div class="noticias-meta">
+          <span>Fonte: G1 Economia</span><br>
+          <a class="link-origem" href="https://g1.globo.com/economia/" target="_blank">Ler matéria original &rarr;</a>
+        </div>
       </article>
 
-      <article class="news-card">
-        <span class="category">ELEIÇÕES 2026</span>
-        <h2>Lei estabelece período em que candidatos e eleitores não podem ser presos</h2>
-        <p>Segundo o Senado, a regra começa em 19 de setembro e prevê exceção para casos de flagrante delito durante o período indicado pela legislação eleitoral.</p>
-        <div class="news-meta">18/09/2026 • Senado Notícias</div>
-        <a class="source-link" href="https://www12.senado.leg.br/noticias/materias/2026/09/18/lei-proibe-prisao-de-candidatos-e-eleitores-durante-periodo-eleitoral" target="_blank" rel="noopener">Ler fonte original →</a>
-      </article>
-
-      <article class="news-card">
-        <span class="category">JUSTIÇA ELEITORAL</span>
-        <h2>Justiça Eleitoral rejeita cerca de 1,2 mil registros de candidatura</h2>
-        <p>Dados divulgados pelo TSE indicavam cerca de 99% dos pedidos de registro analisados até 17 de setembro, com parte dos indeferimentos ainda sujeita a recursos.</p>
-        <div class="news-meta">17/09/2026 • Agência Brasil</div>
-        <a class="source-link" href="https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/justica-eleitoral-rejeita-cerca-de-12-mil-registros-de-candidatura" target="_blank" rel="noopener">Ler fonte original →</a>
+      <!-- Notícia 3 -->
+      <article class="cartao-noticias">
+        <span class="categoria">Meio Ambiente</span>
+        <h2>Iniciativas Globais para Sustentabilidade Transição Energética</h2>
+        <p>Projetos focados em energias renováveis e conservação do meio ambiente ganham destaque em acordos internacionais.</p>
+        <div class="noticias-meta">
+          <span>Fonte: Agência Brasil</span><br>
+          <a class="link-origem" href="https://agenciabrasil.ebc.com.br/" target="_blank">Ler matéria original &rarr;</a>
+        </div>
       </article>
 
     </section>
-
-    <div class="notice">
-      <strong>Como o Pauta+ trabalha:</strong> cada notícia deve indicar fonte e data. Em temas eleitorais, informações podem mudar rapidamente; por isso, consulte a fonte original para atualizações.
-    </div>
-  </div>
-</main>
-
-<footer>
-  <div class="container footer-content">
-    <div>
-      <strong>Pauta+</strong>
-      <p>Informação política de forma clara e acessível.</p>
-    </div>
-    <div>
-      <p>© 2026 Pauta+</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-const menuBtn = document.querySelector(".menu-btn");
-const nav = document.querySelector("nav");
-if (menuBtn && nav) {
-  menuBtn.addEventListener("click", () => nav.classList.toggle("active"));
-  nav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => nav.classList.remove("active"));
-  });
-}
-</script>
+  </main>
 
 </body>
 </html>
