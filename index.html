@@ -1,120 +1,281 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pauta+ — informação política de forma clara, neutra e acessível.">
-<title>Pauta+ | Política sem complicação</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pauta+ — informação política de forma clara e acessível.">
+  <title>Pauta+ | Política em foco</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="#inicio"><span>Pauta</span><b>+</b></a>
+    <a class="brand" href="#inicio">
+      <span>Pauta+</span>
+    </a>
+
     <button class="menu-btn" aria-label="Abrir menu">☰</button>
+
     <nav>
       <a href="#inicio">Início</a>
-      <a href="#noticias">Notícias</a>
-      <a href="#politicos">Políticos</a>
-      <a href="#pesquisas">Pesquisas</a>
-      <a href="#propostas">Propostas</a>
+      <a href="#ultimas">Últimas</a>
+      <a href="#politica">Política</a>
+      <a href="#dados">Dados</a>
+      <a href="#comparar">Comparar</a>
       <a href="#entenda">Entenda</a>
     </nav>
   </div>
 </header>
 
 <main id="inicio">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="tag">INFORMAÇÃO & CIDADANIA</span>
-      <h1>Política sem complicação.</h1>
-      <p>Um espaço para entender instituições, propostas, dados e acontecimentos políticos com linguagem clara e foco em informação.</p>
-      <div class="actions">
-        <a class="btn primary" href="#noticias">Explorar pautas</a>
-        <a class="btn secondary" href="#entenda">Como funciona?</a>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="tag">INFORMAÇÃO POLÍTICA</span>
+        <h1>Política em foco.<br>Informação sem complicação.</h1>
+        <p>
+          Conteúdos explicativos, dados e informações organizadas
+          para ajudar você a entender melhor a política.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn primary" href="#ultimas">Ver últimas pautas</a>
+          <a class="btn secondary" href="#entenda">Entenda política</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <span>PAUTA+ EXPLICA</span>
+        <h2>Como acompanhar uma proposta?</h2>
+        <p>
+          Veja quem apresentou, qual é o texto, em que etapa está
+          e quais mudanças foram propostas.
+        </p>
+        <a href="#entenda">Ler explicação →</a>
       </div>
     </div>
-    <div class="hero-card">
-      <div class="pulse"></div>
-      <span>PAUTA EM DESTAQUE</span>
-      <h3>Como funciona o processo legislativo?</h3>
-      <p>Entenda, em poucos passos, como uma proposta pode tramitar no Congresso.</p>
-      <a href="#entenda">Ler explicação →</a>
+  </section>
+
+  <div class="ticker">
+    <div class="container">
+      Conteúdo desta versão é demonstrativo. Notícias reais devem apresentar fontes e datas verificáveis.
     </div>
   </div>
-</section>
 
-<section class="section" id="noticias">
-  <div class="container">
-    <div class="section-head"><div><span class="eyebrow">ACOMPANHE</span><h2>Notícias e pautas</h2></div><span class="note">Conteúdo demonstrativo</span></div>
-    <div class="cards">
-      <article class="card featured"><div class="card-img">DEMO</div><div class="card-body"><span class="category">CONGRESSO</span><h3>Exemplo de manchete para a página inicial</h3><p>Este texto é apenas um exemplo de como uma notícia poderá aparecer no Pauta+.</p><a href="#entenda">Saiba mais →</a></div></article>
-      <article class="card"><div class="card-body"><span class="category">CIDADANIA</span><h3>O que faz um vereador?</h3><p>Entenda as principais funções do Legislativo municipal.</p><a href="#entenda">Entender →</a></div></article>
-      <article class="card"><div class="card-body"><span class="category">ECONOMIA</span><h3>Como ler um orçamento público?</h3><p>Conceitos básicos para acompanhar receitas e despesas.</p><a href="#entenda">Entender →</a></div></article>
+  <section id="ultimas" class="section">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">ATUALIZAÇÕES</span>
+          <h2>Últimas pautas</h2>
+        </div>
+        <span class="demo">DEMONSTRATIVO</span>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="category">POLÍTICA</span>
+          <h3>Como funciona a votação de uma proposta?</h3>
+          <p>Entenda as principais etapas de análise e votação.</p>
+          <small>Exemplo editorial • Pauta+</small>
+        </article>
+
+        <article class="card">
+          <span class="category">DADOS</span>
+          <h3>O que uma pesquisa eleitoral realmente mostra?</h3>
+          <p>Conheça amostra, margem de erro e período de coleta.</p>
+          <small>Exemplo editorial • Pauta+</small>
+        </article>
+
+        <article class="card">
+          <span class="category">CIDADANIA</span>
+          <h3>Quais são as funções dos representantes?</h3>
+          <p>Veja as diferenças entre cargos e suas atribuições.</p>
+          <small>Exemplo editorial • Pauta+</small>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section alt" id="politicos">
-<div class="container">
-  <div class="section-head"><div><span class="eyebrow">PERFIS</span><h2>Políticos e cargos</h2></div><span class="note">Exemplos educativos</span></div>
-  <div class="people">
-    <div class="person"><div class="avatar">P</div><div><h3>Presidência da República</h3><p>Executivo federal • exemplo de perfil institucional</p></div></div>
-    <div class="person"><div class="avatar">S</div><div><h3>Senado Federal</h3><p>Legislativo federal • exemplo de perfil institucional</p></div></div>
-    <div class="person"><div class="avatar">C</div><div><h3>Câmara dos Deputados</h3><p>Legislativo federal • exemplo de perfil institucional</p></div></div>
-  </div>
-</div>
-</section>
+  <section id="politica" class="section alt">
+    <div class="container">
+      <span class="eyebrow">EDITORIAL</span>
+      <h2>Política</h2>
+      <p class="section-lead">
+        Informações organizadas por tema, com contexto e linguagem simples.
+      </p>
 
-<section class="section" id="pesquisas">
-<div class="container">
-  <div class="section-head"><div><span class="eyebrow">DADOS</span><h2>Pesquisas e números</h2></div><span class="note">Sem dados eleitorais reais nesta demonstração</span></div>
-  <div class="stats">
-    <div class="stat"><strong>01</strong><span>Fonte identificada</span><small>Todo dado publicado deve ter origem indicada.</small></div>
-    <div class="stat"><strong>02</strong><span>Período informado</span><small>Pesquisas precisam apresentar a data de referência.</small></div>
-    <div class="stat"><strong>03</strong><span>Metodologia</span><small>Contexto e metodologia ajudam a interpretar resultados.</small></div>
-  </div>
-</div>
-</section>
+      <div class="feature-grid">
+        <div class="feature">
+          <span>01</span>
+          <h3>Representação política</h3>
+          <p>
+            Entenda as funções de vereadores, prefeitos, deputados,
+            senadores e outros representantes.
+          </p>
+        </div>
 
-<section class="section alt" id="propostas">
-<div class="container">
-  <div class="section-head"><div><span class="eyebrow">COMPARAÇÃO</span><h2>Propostas</h2></div><span class="note">Modelo de comparação neutra</span></div>
-  <div class="table-wrap">
-  <table><thead><tr><th>Tema</th><th>Proposta A</th><th>Proposta B</th></tr></thead>
-  <tbody><tr><td>Educação</td><td>Descrição objetiva da proposta.</td><td>Descrição objetiva da proposta.</td></tr>
-  <tr><td>Saúde</td><td>Descrição objetiva da proposta.</td><td>Descrição objetiva da proposta.</td></tr>
-  <tr><td>Economia</td><td>Descrição objetiva da proposta.</td><td>Descrição objetiva da proposta.</td></tr></tbody></table>
-  </div>
-  <p class="disclaimer">O Pauta+ apresenta diferenças documentadas e deixa a avaliação para o leitor.</p>
-</div>
-</section>
+        <div class="feature">
+          <span>02</span>
+          <h3>Processo legislativo</h3>
+          <p>
+            Saiba como projetos podem ser apresentados, analisados,
+            votados e transformados em leis.
+          </p>
+        </div>
 
-<section class="section" id="entenda">
-<div class="container learn">
-  <div><span class="eyebrow">GUIA RÁPIDO</span><h2>Entenda a política</h2><p>Informação política fica mais simples quando os conceitos são explicados sem excesso de termos técnicos.</p></div>
-  <div class="accordion">
-    <details open><summary>O que é o Executivo?</summary><p>É o poder responsável pela administração e execução de políticas públicas, dentro das competências de cada esfera de governo.</p></details>
-    <details><summary>O que é o Legislativo?</summary><p>É o poder que debate e produz leis e também exerce funções de fiscalização, conforme as regras constitucionais.</p></details>
-    <details><summary>O que é uma pesquisa eleitoral?</summary><p>É uma medição feita com uma amostra de eleitores segundo uma metodologia definida. Resultados precisam ser interpretados considerando período, amostra e margem de erro.</p></details>
-  </div>
-</div>
-</section>
+        <div class="feature">
+          <span>03</span>
+          <h3>Instituições</h3>
+          <p>
+            Conheça o papel dos diferentes órgãos e instituições públicas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="newsletter">
-<div class="container newsletter-box"><div><span class="eyebrow">PAUTA+ NEWS</span><h2>Receba novas pautas</h2><p>Formulário demonstrativo — não envia dados para nenhum serviço.</p></div>
-<form id="newsletter"><input type="email" placeholder="seu@email.com" required><button class="btn primary">Cadastrar</button></form></div>
-</section>
+  <section id="dados" class="section">
+    <div class="container">
+      <span class="eyebrow">NÚMEROS</span>
+      <h2>Dados e pesquisas</h2>
+      <p class="section-lead">
+        Pesquisas devem ser apresentadas com período, população,
+        amostra, metodologia e margem de erro quando disponíveis.
+      </p>
+
+      <div class="data-box">
+        <div>
+          <strong>01</strong>
+          <span>Período da pesquisa</span>
+        </div>
+        <div>
+          <strong>02</strong>
+          <span>Tamanho da amostra</span>
+        </div>
+        <div>
+          <strong>03</strong>
+          <span>Margem de erro</span>
+        </div>
+        <div>
+          <strong>04</strong>
+          <span>Fonte verificável</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="comparar" class="section alt">
+    <div class="container">
+      <span class="eyebrow">COMPARAÇÃO</span>
+      <h2>Compare propostas</h2>
+      <p class="section-lead">
+        Compare informações lado a lado sem transformar a comparação
+        em uma classificação.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tema</th>
+              <th>Proposta A</th>
+              <th>Proposta B</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Objetivo</td>
+              <td>Descrição demonstrativa</td>
+              <td>Descrição demonstrativa</td>
+            </tr>
+            <tr>
+              <td>Medida</td>
+              <td>Descrição demonstrativa</td>
+              <td>Descrição demonstrativa</td>
+            </tr>
+            <tr>
+              <td>Fonte</td>
+              <td>A verificar</td>
+              <td>A verificar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="entenda" class="section">
+    <div class="container">
+      <span class="eyebrow">GUIA</span>
+      <h2>Pauta+ Explica</h2>
+
+      <div class="accordion">
+
+        <details open>
+          <summary>O que é uma lei?</summary>
+          <p>
+            É uma norma aprovada pelo processo legislativo e que deve
+            seguir as regras previstas na Constituição e nas demais normas.
+          </p>
+        </details>
+
+        <details>
+          <summary>O que é um projeto de lei?</summary>
+          <p>
+            É uma proposta que pode ser analisada pelo Poder Legislativo
+            para criar, alterar ou revogar uma lei.
+          </p>
+        </details>
+
+        <details>
+          <summary>Como verificar uma informação política?</summary>
+          <p>
+            Procure a fonte original, confira a data, o contexto e,
+            quando possível, compare com documentos oficiais.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container newsletter-box">
+      <div>
+        <span class="eyebrow">PAUTA+</span>
+        <h2>Receba novidades</h2>
+        <p>Área demonstrativa para futuras atualizações do site.</p>
+      </div>
+
+      <form id="newsletterForm">
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </section>
+
 </main>
 
 <footer>
-<div class="container footer-grid"><div><a class="brand" href="#inicio"><span>Pauta</span><b>+</b></a><p>Informação política clara, contextualizada e responsável.</p></div>
-<div><strong>Seções</strong><a href="#noticias">Notícias</a><a href="#pesquisas">Pesquisas</a><a href="#propostas">Propostas</a></div>
-<div><strong>Transparência</strong><a href="#entenda">Metodologia</a><a href="#entenda">Sobre o projeto</a></div></div>
-<div class="container copyright">© 2026 Pauta+ • Projeto demonstrativo</div>
+  <div class="container footer-content">
+    <div>
+      <strong>Pauta+</strong>
+      <p>Informação política de forma clara e acessível.</p>
+    </div>
+
+    <div>
+      <p>Projeto demonstrativo</p>
+      <p>© 2026 Pauta+</p>
+    </div>
+  </div>
 </footer>
-<div id="toast" class="toast">Cadastro demonstrativo realizado.</div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
